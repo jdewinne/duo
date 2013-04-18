@@ -6,5 +6,12 @@
         <property name="dateFormat" hidden="false" />
     </type-modification>
 
+    <type type="duo.War" extends="jee.War">
+        <property name="contextRoot" kind="string" description="Specifies the context root of the Web application (WAR)." />
+        <property name="virtualHost" kind="string" required="false" description="Specify the virtual host where you want to install the Web modules that are contained in your application. You can install Web modules on the same virtual host or disperse them among several hosts. " />
+        <property name="webServers" kind="set_of_string" required="false" default="" description="Specify the Web servers as targets that serve as routers for requests to this application." />
+        <property name="preCompileJsps" kind="boolean" required="false" default="false" description="Specify whether to precompile JavaServer Pages (JSP) files as a part of installation. The default is not to precompile JSP files." />
+    </type>
+
 
 </synthetic>
